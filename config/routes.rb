@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  get "/pizza" => "pizza#pizza_method"
+  namespace :v1 do
+    get "/pizza" => "pizza#pizza_method"
+  end
 end
